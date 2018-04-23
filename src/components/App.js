@@ -6,12 +6,15 @@ import {
 import Home from './Home'
 import Films from './Films'
 import Teams from './Teams'
+import Navbar from './Navbar'
 
 class App extends Component {
   render() {
     return (
       <Router>
       	<div>
+      		<Navbar />
+
 	        <Route path='/' exact component={Home} />
 	  		<Route path='/films' component={Films} />
 	  		<Route path='/teams' component={Teams} />
